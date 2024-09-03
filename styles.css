@@ -1,0 +1,44 @@
+p {
+    color: green;
+    font-size: 2em;
+  }
+
+h1 {
+    color: black;
+    font-size: 5em;
+    text-align: center;
+
+}
+
+.megsbox {
+  width: 100px;
+  border: 15px solid green;
+  padding: 25px;
+  margin: 10px;
+
+}
+
+.box1 {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+.outline {
+  border: 2px solid red; /* Outline color and thickness */
+  padding: 10px;         /* Space between the border and the inner content */
+  box-sizing: border-box;
+
+}
+
+.container {
+  display: flex;        
+  gap: 20px;
+}
+
+img {
+  width: 100%; 
+  height: auto;
+  display: block; 
+}
