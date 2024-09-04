@@ -12,6 +12,20 @@ function AddCountry(country){
     //Appending the ordered list to the unordered list with id "country-list"
     ul.appendChild(li)
 
+    //Putting delete button inside add-function 
+    var deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "X"
+    deleteBtn.className = "delete-button"
+
+    li.appendChild(deleteBtn)
+
+    deleteBtn.onclick = function() {
+        li.remove();
+    };
+
+
+    
+
     //return ul
 
 

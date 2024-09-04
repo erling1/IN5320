@@ -49,3 +49,16 @@ ul {
   background-color: #f0f0f0; /* Background color */
 }
 
+.delete-button {
+  background: red;         
+  color: black;                        
+  text-align: center;    
+  border-radius: 76%;  
+      
+  cursor: pointer;         
+      
+}
+
+.delete-button:hover {
+  background: darkred;     /* Darker red on hover */
+}
