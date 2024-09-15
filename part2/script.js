@@ -46,24 +46,6 @@ function find_country(named_list, searchWord){
 
     return named_list.filter(item => startswith(item.textContent.toLowerCase(),searchWord));
 
-
-    //document.getElementById("myBtn").addEventListener("click", displayDate);
-
-    //var new_list = document.getElementById('filtered-list')
-    //new_list.innerHTML = '';
-
-    //const old_list = document.getElementById('country-list');
-
-    //old_list.innerHTML = '';
-
-    
-    //original_list_filtered.forEach(item => {
-     //   var list_element = document.createElement('li')
-    //    list_element.textContent = item
-    //    new_list.appendChild(list_element)
-    
-
-    //})
     
 }
 

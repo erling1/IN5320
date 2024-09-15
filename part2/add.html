@@ -34,10 +34,10 @@
         const list_of_countries = document.getElementById('country-list');
         const countries = Array.from(document.getElementById('country-list').children)
 
-        const filtered_list = find_country(list_of_countries,searchWord)
+        const filtered_list = find_country(countries,searchWord)
 
         // Clear the current list
-        //list_of_countries.innerHTML = '';
+        list_of_countries.innerHTML = '';
 
         // Append only the filtered countries to the list
         filtered_list.forEach(country => {
