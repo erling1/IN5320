@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Original title</title>
+        <link rel="stylesheet" href="styles2.css">
+    </head>
+
+    <body>
+
+    
+    
+    <ul id = "country-list" style = 'background-color: rgb(176, 170, 170)'> </ul>
+    
+    
+
+    <input type="text" id="input-a-country" placeholder="Country">
+
+    <button type="button" id="searchButton" onclick="AddCountry(document.getElementById('input-a-country').value)"> Add </button>
+    
+
+    <input type="text" id="search-input">
+
+    <script src="script.js"></script>
+
+    <script>
+
+    const searchBox = document.getElementById('search-input');
+    searchBox.addEventListener('input', () => {
+        
+        const searchWord = searchBox.value.toLowerCase()
+        const list_of_countries = document.getElementById('country-list');
+        const countries = Array.from(document.getElementById('country-list').children)
+
+        const filtered_list = find_country(list_of_countries,searchWord)
+
+        // Clear the current list
+        //list_of_countries.innerHTML = '';
+
+        // Append only the filtered countries to the list
+        filtered_list.forEach(country => {
+        list_of_countries.appendChild(country);
+        });
+        
+        
+    }) 
+    
+
+    </script>
+
+
+
+
+    </body>
+</html>

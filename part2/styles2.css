@@ -1,0 +1,20 @@
+
+ul {
+  margin: 20px;           /* Adds space around the list */
+  padding: 10px;          /* Adds space inside the list */
+  background-color: #85f127; /* Background color */
+}
+
+.delete-button {
+  background: red;         
+  color: black;                        
+  text-align: center;    
+  border-radius: 76%;  
+      
+  cursor: pointer;         
+      
+}
+
+.delete-button:hover {
+  background: darkred;     /* Darker red on hover */
+}
